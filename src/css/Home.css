@@ -1,0 +1,8 @@
+.homeContainer{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.myCard{
+    width: 25%;
+}
