@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, {useState,useEffect} from 'react';
+import '../css/Home.css'
 
 const StarshipPage = (props) => {
     let [data,setData] = useState([])
@@ -17,8 +18,7 @@ const StarshipPage = (props) => {
     const display = () => {
         return(
             <div>
-                <div className="row">
-                    <div className="col s12 m6">
+                    <div className="show">
                         <div className="card blue-grey darken-1">
                             <div className="card-content white-text">
                             <span className="card-title">{data.name}</span>
@@ -29,7 +29,6 @@ const StarshipPage = (props) => {
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         )
     }

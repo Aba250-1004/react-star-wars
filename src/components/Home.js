@@ -26,8 +26,8 @@ const Home = () => {
         return data.map((data,index) => {
             return (
                 <div key={index}>
-                <div className="row">
-                    <div className="col s12 m6">
+                {/* <div className="row"> */}
+                    <div className="col s6 m3 myCard">
                         <div className="card blue-grey darken-1">
                             <div className="card-content white-text">
                             <span className="card-title"><Link to={'/starship/?id='+(getId(index))} values={data}>{data.name}</Link></span>
@@ -35,7 +35,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
             )
         })

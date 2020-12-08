@@ -4,5 +4,15 @@
 }
 
 .myCard{
+    display: inline block;
+    float: left;
+    padding: 10px;
     width: 25%;
+}
+
+.show{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
 }
